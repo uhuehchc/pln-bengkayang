@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi PLN Bengkayang</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0066CC", secondary: "#FFC107" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Poppins', sans-serif;
+      }
+      .content-area {
+      padding-top: 60px;
+      padding-bottom: 70px;
+      min-height: 762px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Nav Bar -->
+    <nav class="fixed top-0 w-full bg-primary text-white shadow-md z-50">
+      <div class="flex items-center justify-between px-4 py-3">
+        <div class="flex items-center">
+          <span class="font-['Pacifico'] text-xl mr-2">logo</span>
+          <span class="text-sm font-medium">PLN Bengkayang</span>
+        </div>
+        <button
+          id="loginBtn"
+          class="flex items-center justify-center bg-white/10 hover:bg-white/20 px-3 py-1 rounded-button text-xs cursor-pointer"
+        >
+          <i class="ri-user-line ri-sm mr-1"></i>
+          Login Admin
+        </button>
+      </div>
+    </nav>
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- Main Content -->
+      <div id="mainContent" class="px-4">
+        <!-- Hero Section -->
+        <div class="relative rounded-lg overflow-hidden mb-6 mt-2">
+          <img
+            src="https://readdy.ai/api/search-image?query=modern%20electricity%20power%20grid%20station%20with%20blue%20sky%2C%20professional%20corporate%20image%2C%20power%20lines%2C%20electrical%20infrastructure%2C%20clean%20energy&width=375&height=180&seq=1&orientation=landscape"
+            alt="PLN Bengkayang"
+            class="w-full h-[180px] object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4"
+          >
+            <h1 class="text-white text-xl font-semibold">
+              Informasi PLN Bengkayang
+            </h1>
+            <p class="text-white/90 text-xs">Melayani dengan sepenuh hati</p>
+          </div>
+        </div>
+        <!-- Tab Buttons -->
+        <div class="bg-white rounded-full p-1 flex mb-6 shadow-sm">
+          <button
+            id="tentangBtn"
+            class="flex-1 py-2 px-4 rounded-full bg-primary text-white text-sm font-medium cursor-pointer"
+          >
+            Tentang Kami
+          </button>
+          <button
+            id="infoBtn"
+            class="flex-1 py-2 px-4 rounded-full text-gray-700 text-sm font-medium cursor-pointer"
+          >
+            Info Pemadaman
+          </button>
+        </div>
+        <!-- Tentang Kami Section -->
+        <div id="tentangSection" class="bg-white rounded-lg shadow-sm p-4 mb-6">
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">
+            Tentang PLN Bengkayang
+          </h2>
+          <div class="mb-4">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20electricity%20company%20office%20building%20exterior%2C%20professional%20corporate%20headquarters%2C%20clean%20architecture%2C%20blue%20accent%20colors%2C%20sunny%20day&width=375&height=200&seq=2&orientation=landscape"
+              alt="Kantor PLN Bengkayang"
+              class="w-full h-[200px] object-cover rounded-lg mb-3"
+            />
+          </div>
+          <p class="text-sm text-gray-600 mb-4">
+            PT PLN (Persero) Unit Layanan Pelanggan Bengkayang adalah bagian
+            dari PLN yang melayani kebutuhan listrik masyarakat di wilayah
+            Bengkayang dan sekitarnya. Kami berkomitmen untuk memberikan
+            pelayanan terbaik dalam penyediaan tenaga listrik yang andal,
+            berkelanjutan, dan ramah lingkungan.
+          </p>
+          <div class="border-l-4 border-primary pl-3 mb-4">
+            <h3 class="text-sm font-semibold text-gray-800 mb-1">Visi</h3>
+            <p class="text-xs text-gray-600">
+              Menjadi perusahaan listrik terkemuka di Asia Tenggara dan pilihan
+              pelanggan untuk solusi energi.
+            </p>
+          </div>
+          <div class="border-l-4 border-primary pl-3 mb-4">
+            <h3 class="text-sm font-semibold text-gray-800 mb-1">Misi</h3>
+            <p class="text-xs text-gray-600">
+              • Menjalankan bisnis kelistrikan yang berorientasi pada kepuasan
+              pelanggan<br />
+              • Menghadirkan tenaga listrik untuk kehidupan yang lebih baik<br />
+              • Menjalankan usaha penyediaan tenaga listrik yang andal dan
+              berkelanjutan
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3 mb-2">
+            <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              Informasi Kontak
+            </h3>
+            <div class="flex items-start mb-2">
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+              >
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <p class="text-xs text-gray-600">
+                Jl. Raya Sanggau Ledo Bumi Amas. kec.Bengkayang,
+                Kabupaten bengkayang, kalimantan barat kode pos 79211
+              </p>
+            </div>
+            <div class="flex items-start mb-2">
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+              >
+                <i class="ri-phone-line"></i>
+              </div>
+              <p class="text-xs text-gray-600">
+                Call Center: 123<br />Telepon: (0562) 7654321
+              </p>
+            </div>
+            <div class="flex items-start">
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+              >
+                <i class="ri-mail-line"></i>
+              </div>
+              <p class="text-xs text-gray-600">
+                Email: pln.bengkayang@pln.co.id
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Info Pemadaman Section -->
+        <div id="infoSection" class="hidden">
+          <div class="bg-white rounded-lg shadow-sm p-4 mb-4">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-gray-800">
+                Informasi Pemadaman
+              </h2>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full"
+              >
+                <i class="ri-notification-3-line text-primary"></i>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 mb-4">
+              Berikut adalah jadwal pemadaman listrik yang akan atau sedang
+              berlangsung di wilayah Bengkayang dan sekitarnya.
+            </p>
+            <div id="pemadamanList">
+              <!-- Pemadaman items will be added here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Login Modal -->
+      <div
+        id="loginModal"
+        class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden"
+      >
+        <div class="bg-white rounded-lg w-[320px] shadow-lg">
+          <div class="p-4 border-b">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-800">Login Admin</h3>
+              <button
+                id="closeLoginBtn"
+                class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 cursor-pointer"
+              >
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-4">
+            <form id="loginForm">
+              <div class="mb-4">
+                <label
+                  for="username"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Username</label
+                >
+                <input
+                  type="text"
+                  id="username"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Masukkan username"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Masukkan password"
+                />
+              </div>
+              <div id="loginError" class="mb-4 text-red-500 text-sm hidden">
+                Username atau password salah!
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-2 px-4 rounded-button hover:bg-primary/90 cursor-pointer"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Admin Panel -->
+      <div id="adminPanel" class="hidden px-4">
+        <div class="bg-white rounded-lg shadow-sm p-4 mb-4">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold text-gray-800">Panel Admin</h2>
+            <button
+              id="logoutBtn"
+              class="flex items-center justify-center bg-red-500 text-white px-3 py-1 rounded-button text-xs cursor-pointer"
+            >
+              <i class="ri-logout-box-line ri-sm mr-1"></i>
+              Logout
+            </button>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              Tambah Informasi Pemadaman Baru
+            </h3>
+            <form id="addPemadamanForm">
+              <div class="grid grid-cols-2 gap-3 mb-3">
+                <div>
+                  <label
+                    for="tanggal"
+                    class="block text-xs font-medium text-gray-700 mb-1"
+                    >Tanggal</label
+                  >
+                  <input
+                    type="date"
+                    id="tanggal"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="waktu"
+                    class="block text-xs font-medium text-gray-700 mb-1"
+                    >Waktu</label
+                  >
+                  <input
+                    type="time"
+                    id="waktu"
+                    class="w-full px-3 py-2 text-sm border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label
+                  for="durasi"
+                  class="block text-xs font-medium text-gray-700 mb-1"
+                  >Durasi (jam)</label
+                >
+                <input
+                  type="text"
+                  id="durasi"
+                  class="w-full px-3 py-2 text-sm border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Contoh: 4"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="lokasi"
+                  class="block text-xs font-medium text-gray-700 mb-1"
+                  >Lokasi</label
+                >
+                <input
+                  type="text"
+                  id="lokasi"
+                  class="w-full px-3 py-2 text-sm border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Contoh: Kecamatan Bengkayang"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="alasan"
+                  class="block text-xs font-medium text-gray-700 mb-1"
+                  >Alasan</label
+                >
+                <textarea
+                  id="alasan"
+                  rows="2"
+                  class="w-full px-3 py-2 text-sm border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Contoh: Pemeliharaan rutin jaringan"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-2 px-4 rounded-button hover:bg-primary/90 cursor-pointer text-sm"
+              >
+                Tambah Informasi
+              </button>
+            </form>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-800 mb-2">
+              Kelola Informasi Pemadaman
+            </h3>
+            <div id="adminPemadamanList" class="space-y-3">
+              <!-- Admin pemadaman items will be added here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tab Bar -->
+    <div
+      class="fixed bottom-0 w-full bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50"
+    >
+      <div class="grid grid-cols-2 h-[60px]">
+        <button
+          id="tentangTabBtn"
+          class="flex flex-col items-center justify-center text-primary cursor-pointer"
+        >
+          <div class="w-6 h-6 flex items-center justify-center">
+            <i class="ri-building-2-line ri-lg"></i>
+          </div>
+          <span class="text-xs mt-1">Tentang Kami</span>
+        </button>
+        <button
+          id="infoTabBtn"
+          class="flex flex-col items-center justify-center text-gray-500 cursor-pointer"
+        >
+          <div class="w-6 h-6 flex items-center justify-center">
+            <i class="ri-notification-3-line ri-lg"></i>
+          </div>
+          <span class="text-xs mt-1">Info Pemadaman</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sample data
+        const pemadamanData = [
+          {
+            id: 1,
+            tanggal: "2025-04-22",
+            waktu: "08:00",
+            durasi: 5,
+            lokasi: "Kecamatan Bengkayang, Jalan Raya Bengkayang - Sanggau Ledo",
+            alasan: "Pemeliharaan jaringan dan penggantian trafo distribusi",
+          },
+          {
+            id: 2,
+            tanggal: "2025-04-25",
+            waktu: "09:30",
+            durasi: 3,
+            lokasi: "Desa Tujuh Belas, Kecamatan Bengkayang",
+            alasan: "Perbaikan tiang listrik yang rusak akibat angin kencang",
+          },
+          {
+            id: 3,
+            tanggal: "2025-04-28",
+            waktu: "10:00",
+            durasi: 4,
+            lokasi: "Kecamatan Ledo, Desa Ledo dan sekitarnya",
+            alasan: "Pemasangan kabel baru untuk peningkatan kapasitas daya",
+          },
+        ];
+        // Save to localStorage if not exists
+        if (!localStorage.getItem("pemadamanData")) {
+          localStorage.setItem("pemadamanData", JSON.stringify(pemadamanData));
+        }
+        // DOM elements
+        const tentangBtn = document.getElementById("tentangBtn");
+        const infoBtn = document.getElementById("infoBtn");
+        const tentangSection = document.getElementById("tentangSection");
+        const infoSection = document.getElementById("infoSection");
+        const loginBtn = document.getElementById("loginBtn");
+        const loginModal = document.getElementById("loginModal");
+        const closeLoginBtn = document.getElementById("closeLoginBtn");
+        const loginForm = document.getElementById("loginForm");
+        const loginError = document.getElementById("loginError");
+        const adminPanel = document.getElementById("adminPanel");
+        const mainContent = document.getElementById("mainContent");
+        const logoutBtn = document.getElementById("logoutBtn");
+        const addPemadamanForm = document.getElementById("addPemadamanForm");
+        const tentangTabBtn = document.getElementById("tentangTabBtn");
+        const infoTabBtn = document.getElementById("infoTabBtn");
+        // Function to render pemadaman items
+        function renderPemadamanItems() {
+          const data = JSON.parse(localStorage.getItem("pemadamanData")) || [];
+          const pemadamanList = document.getElementById("pemadamanList");
+          const adminPemadamanList = document.getElementById("adminPemadamanList");
+          // Clear existing items
+          pemadamanList.innerHTML = "";
+          if (adminPemadamanList) {
+            adminPemadamanList.innerHTML = "";
+          }
+          if (data.length === 0) {
+            pemadamanList.innerHTML =
+              '<p class="text-center text-gray-500 py-4">Tidak ada informasi pemadaman saat ini.</p>';
+            if (adminPemadamanList) {
+              adminPemadamanList.innerHTML =
+                '<p class="text-center text-gray-500 py-4">Tidak ada informasi pemadaman saat ini.</p>';
+            }
+            return;
+          }
+          // Sort by date and time
+          data.sort((a, b) => {
+            const dateA = new Date(`${a.tanggal}T${a.waktu}`);
+            const dateB = new Date(`${b.tanggal}T${b.waktu}`);
+            return dateA - dateB;
+          });
+          // Render items for user view
+          data.forEach((item) => {
+            const date = new Date(`${item.tanggal}T${item.waktu}`);
+            const formattedDate = date.toLocaleDateString("id-ID", {
+              weekday: "long",
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            });
+            const formattedTime = date.toLocaleTimeString("id-ID", {
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+            const endTime = new Date(date.getTime() + item.durasi * 60 * 60 * 1000);
+            const formattedEndTime = endTime.toLocaleTimeString("id-ID", {
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+            const isPast = date < new Date();
+            const isOngoing = date <= new Date() && endTime >= new Date();
+            let statusClass = "";
+            let statusText = "";
+            if (isPast && !isOngoing) {
+              statusClass = "bg-gray-100 text-gray-500";
+              statusText = "Selesai";
+            } else if (isOngoing) {
+              statusClass = "bg-red-100 text-red-500";
+              statusText = "Sedang Berlangsung";
+            } else {
+              statusClass = "bg-yellow-100 text-yellow-700";
+              statusText = "Akan Datang";
+            }
+            const itemHTML = `
+      <div class="border border-gray-100 rounded-lg p-3 mb-3 ${isPast && !isOngoing ? "bg-gray-50" : "bg-white"}">
+      <div class="flex justify-between items-start mb-2">
+      <div>
+      <h3 class="text-sm font-medium text-gray-800">${item.lokasi}</h3>
+      <p class="text-xs text-gray-500">${formattedDate}</p>
+      </div>
+      <span class="text-xs px-2 py-1 rounded-full ${statusClass}">${statusText}</span>
+      </div>
+      <div class="flex items-center mb-2">
+      <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+      <i class="ri-time-line"></i>
+      </div>
+      <p class="text-xs text-gray-600">${formattedTime} - ${formattedEndTime} (${item.durasi} jam)</p>
+      </div>
+      <div class="flex items-start">
+      <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+      <i class="ri-information-line"></i>
+      </div>
+      <p class="text-xs text-gray-600">${item.alasan}</p>
+      </div>
+      </div>
+      `;
+            pemadamanList.innerHTML += itemHTML;
+            // Render items for admin view
+            if (adminPemadamanList) {
+              const adminItemHTML = `
+      <div class="border border-gray-200 rounded-lg p-3 ${isPast && !isOngoing ? "bg-gray-50" : "bg-white"}">
+      <div class="flex justify-between items-start mb-2">
+      <div>
+      <h3 class="text-sm font-medium text-gray-800">${item.lokasi}</h3>
+      <p class="text-xs text-gray-500">${formattedDate}, ${formattedTime} - ${formattedEndTime}</p>
+      </div>
+      <span class="text-xs px-2 py-1 rounded-full ${statusClass}">${statusText}</span>
+      </div>
+      <p class="text-xs text-gray-600 mb-2">${item.alasan}</p>
+      <div class="flex justify-end gap-2 mt-2">
+      <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded-button text-xs cursor-pointer" data-id="${item.id}">
+      <i class="ri-delete-bin-line ri-sm mr-1"></i>
+      Hapus
+      </button>
+      </div>
+      </div>
+      `;
+              adminPemadamanList.innerHTML += adminItemHTML;
+            }
+          });
+          // Add event listeners for delete buttons
+          if (adminPemadamanList) {
+            const deleteButtons = adminPemadamanList.querySelectorAll(".delete-btn");
+            deleteButtons.forEach((btn) => {
+              btn.addEventListener("click", function () {
+                const id = parseInt(this.getAttribute("data-id"));
+                deletePemadaman(id);
+              });
+            });
+          }
+        }
+        // Function to delete pemadaman
+        function deletePemadaman(id) {
+          if (confirm("Apakah Anda yakin ingin menghapus informasi pemadaman ini?")) {
+            let data = JSON.parse(localStorage.getItem("pemadamanData")) || [];
+            data = data.filter((item) => item.id !== id);
+            localStorage.setItem("pemadamanData", JSON.stringify(data));
+            renderPemadamanItems();
+          }
+        }
+        // Function to add new pemadaman
+        function addPemadaman(pemadaman) {
+          let data = JSON.parse(localStorage.getItem("pemadamanData")) || [];
+          const newId =
+            data.length > 0 ? Math.max(...data.map((item) => item.id)) + 1 : 1;
+          const newPemadaman = {
+            id: newId,
+            ...pemadaman,
+          };
+          data.push(newPemadaman);
+          localStorage.setItem("pemadamanData", JSON.stringify(data));
+          renderPemadamanItems();
+        }
+        // Initial render
+        renderPemadamanItems();
+        // Tab switching
+        function showTentangSection() {
+          tentangSection.classList.remove("hidden");
+          infoSection.classList.add("hidden");
+          tentangBtn.classList.add("bg-primary", "text-white");
+          tentangBtn.classList.remove("text-gray-700");
+          infoBtn.classList.remove("bg-primary", "text-white");
+          infoBtn.classList.add("text-gray-700");
+          tentangTabBtn.classList.add("text-primary");
+          tentangTabBtn.classList.remove("text-gray-500");
+          infoTabBtn.classList.remove("text-primary");
+          infoTabBtn.classList.add("text-gray-500");
+        }
+        function showInfoSection() {
+          tentangSection.classList.add("hidden");
+          infoSection.classList.remove("hidden");
+          tentangBtn.classList.remove("bg-primary", "text-white");
+          tentangBtn.classList.add("text-gray-700");
+          infoBtn.classList.add("bg-primary", "text-white");
+          infoBtn.classList.remove("text-gray-700");
+          tentangTabBtn.classList.remove("text-primary");
+          tentangTabBtn.classList.add("text-gray-500");
+          infoTabBtn.classList.add("text-primary");
+          infoTabBtn.classList.remove("text-gray-500");
+        }
+        tentangBtn.addEventListener("click", showTentangSection);
+        infoBtn.addEventListener("click", showInfoSection);
+        tentangTabBtn.addEventListener("click", showTentangSection);
+        infoTabBtn.addEventListener("click", showInfoSection);
+        // Login modal
+        loginBtn.addEventListener("click", function () {
+          loginModal.classList.remove("hidden");
+        });
+        closeLoginBtn.addEventListener("click", function () {
+          loginModal.classList.add("hidden");
+          loginError.classList.add("hidden");
+          loginForm.reset();
+        });
+        // Login form submission
+        loginForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          if (username === "admin" && password === "12345") {
+            // Login successful
+            loginModal.classList.add("hidden");
+            mainContent.classList.add("hidden");
+            adminPanel.classList.remove("hidden");
+            loginForm.reset();
+            loginError.classList.add("hidden");
+          } else {
+            // Login failed
+            loginError.classList.remove("hidden");
+          }
+        });
+        // Logout
+        logoutBtn.addEventListener("click", function () {
+          adminPanel.classList.add("hidden");
+          mainContent.classList.remove("hidden");
+          showTentangSection();
+        });
+        // Add pemadaman form submission
+        addPemadamanForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const tanggal = document.getElementById("tanggal").value;
+          const waktu = document.getElementById("waktu").value;
+          const durasi = parseInt(document.getElementById("durasi").value);
+          const lokasi = document.getElementById("lokasi").value;
+          const alasan = document.getElementById("alasan").value;
+          if (!tanggal || !waktu || isNaN(durasi) || !lokasi || !alasan) {
+            alert("Semua field harus diisi dengan benar!");
+            return;
+          }
+          const newPemadaman = {
+            tanggal,
+            waktu,
+            durasi,
+            lokasi,
+            alasan,
+          };
+          addPemadaman(newPemadaman);
+          addPemadamanForm.reset();
+          alert("Informasi pemadaman berhasil ditambahkan!");
+        });
+        // Set today's date as default for the date input
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, "0");
+        const dd = String(today.getDate()).padStart(2, "0");
+        document.getElementById("tanggal").value = `${yyyy}-${mm}-${dd}`;
+      });
+    </script>
+  </body>
+</html>
